@@ -1,11 +1,16 @@
-for(let i = 1; i <= 100; i++){
-    if(i % 3 === 0 && i % 5 === 0){
-        console.log('FizzBuzz')
-    }else if(i % 3 === 0){
-        console.log('Fizz')
-    }else if(i % 5 === 0){
-        console.log('Buzz')
-    }else{
-        console.log(i)
-    }
+var output = [];
+let counter = 1;
+
+function fizzBuzz() {
+  if (counter % 3 === 0 && counter % 5 === 0) {
+    output.push("FizzBuzz");
+  } else if (counter % 5 === 0) {
+    output.push("Buzz");
+  } else if (counter % 3 === 0) {
+    output.push("Fizz");
+  } else {
+    output.push(counter);
+  }
+  counter += 1;
+  console.log(output);
 }
